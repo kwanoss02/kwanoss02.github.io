@@ -1,0 +1,93 @@
+* {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.headerShadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+.landing {
+  background: linear-gradient(135deg, #ffffff, #d3cce3);
+}
+
+.underline_effect {
+  position: relative;
+}
+
+.underline_effect::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+  transform: translateX(-50%)
+}
+
+.underline_effect:hover::after {
+  width: 100%;
+}
+
+.innerShadow {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.custom-box {
+  box-shadow: rgb(107 114 128) 0px 0px 0px 2px inset, rgb(156 163 175) 10px -10px 0px -3px, rgb(107 114 128) 10px -10px; 
+}
+
+.custom-box-white {
+  box-shadow: rgb(255 255 255) 0px 0px 0px 2px inset, rgb(156 163 175) 10px -10px 0px -3px, rgb(255 255 255) 10px -10px; 
+}
+
+.droplet {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.tablet {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.layered-down {
+  box-shadow: rgb(189, 193, 199) 5px 5px, rgb(209 213 219) 10px 10px, rgb(229 231 235) 15px 15px;
+}
+
+.layered-down-darker {
+  box-shadow: rgb(149, 153, 159) 5px 5px, rgb(169 173 179) 10px 10px, rgb(189, 193, 199) 15px 15px;
+}
+
+.mac {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.faq-box {
+  transition: background-color 0.3s ease;
+}
+
+.faq-box.active .flex {
+  background-color: #f7fafc; /* Change this to your desired bg-100 color */
+}
+
+.fadeIn{
+  position: relative;
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.fadeIn.active{
+  opacity: 1;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
